@@ -17,6 +17,18 @@ For bulk orders:
   * **postCode** (string): Postal code, formatted without spaces. Not case-sensitive. Required.
   * **deliverDate** (string): Delivery date in YYYY-MM-DD. Required.
 
+## Resources
+The obtained JSON objects from the queries of PizzaTime API will be formatted the same, regardless of whether or not the query was for a single order or a bulk order.
+```
+"results":
+    {
+      "restaurantName": String. Name of restaurant.
+      "eta": String. Estimated minutes to arrival.
+      "contactInfo": String. Phone number details.
+      "closingTime": String. Listed hours of the queried restaurant.
+    }
+```
+
 ## Sample requests
 These are two sample requests for getting pizza joint information from our API from a given location.
 
