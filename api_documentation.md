@@ -1,11 +1,11 @@
 # PizzaTime API
 
-This is an API that conveniently provides contact information, menus, open hours, and delivery times of nearby local pizza joints, based on your given postal code.  
-PizzaTime API is able to handle queries for single orders as well as bulk orders, provided the right parameters.
+This is an API that conveniently provides contact information, menus, open hours, and delivery times of nearby local pizza joints, based on your given postal code information, among other additional parameters.
 
 
 ## Endpoint
-We have a single endpoint: ```GET /restaurants``` will access all pizza joints in Manitoba, and can be further tuned using the parameters.
+We have a single endpoint: 
+```GET /restaurants``` will access pizza joints according to your provided postal code, and can be further tuned with the use of the additional provided parameters.
 
 
 ## Parameters
@@ -15,15 +15,16 @@ We have a single endpoint: ```GET /restaurants``` will access all pizza joints i
  
 
 ## Sample requests
-These are two sample requests for getting pizza joint information from our API from a given location.
+These are a handful of sample requests that you can use to query your results and find pizza joints near you:
 ```
   https://www.pizzatime.org/restaurants?postCode="R3T3M2"
   https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxMins=10
   https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxPrice=20
   https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxPrice=20&maxMins=10
-  
 ```
+
 ## Sample Responses
+The response of our API contains the restaurant name, it's ETA for delivering pizza, it's contact info, as well as it's closing time, all of which is taken from the pizza joints' hosted information.
 
 ```
 {
