@@ -4,46 +4,26 @@ This is an API that conveniently provides contact information, menus, open hours
 PizzaTime API is able to handle queries for single orders as well as bulk orders, provided the right parameters.
 
 
-## Endpoints
-PizzaTime API has two simple GET requests: https://pizzatime.org/json will provide either **single order delivery information** or **bulk order delivery information** based on your given parameters.
+## Endpoint
+We have a single endpoint: ```GET /restaurants``` will access all pizza joints in Manitoba, and can be further tuned using the parameters.
 
 
 ## Parameters
-For single orders:
   * **postCode** (string): Postal code, formatted without spaces. Not case-sensitive. Required.
-  * **maxMins** (int): Maximum acceptible waiting time in minutes. Required.
-  
-For bulk orders:
-  * **postCode** (string): Postal code, formatted without spaces. Not case-sensitive. Required.
-  * **deliverDate** (string): Delivery date in YYYY-MM-DD. Required.
-
-## Resources
-The obtained JSON objects from the queries of PizzaTime API will be formatted the same, regardless of whether or not the query was for a single order or a bulk order.
-```
-"results":
-    {
-      "restaurantName": String. Name of restaurant.
-      "eta": String. Estimated minutes to arrival.
-      "contactInfo": String. Phone number details.
-      "closingTime": String. Listed hours of the queried restaurant.
-    }
-```
+  * **maxMins** (int): Maximum acceptable waiting time in minutes. Optional
+  * **maxPrice** (int):  Maximum acceptable price for a standard pizza. Optional.
+ 
 
 ## Sample requests
 These are two sample requests for getting pizza joint information from our API from a given location.
-
-Single order: 
 ```
-https://pizzatime.org/json?postCode=r3t3m2&maxMins=20
+  https://www.pizzatime.org/restaurants?postCode="R3T3M2"
+  https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxMins=10
+  https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxPrice=20
+  https://www.pizzatime.org/restaurants?postCode="R3T3M2"&maxPrice=20&maxMins=10
+  
 ```
-Bulk order:
-```
-https://pizzatime.org/json?postCode=r3t3m2&deliverdate=2020-11-11
-```
-
 ## Sample Responses
-
-Results for single orders:
 
 ```
 {
