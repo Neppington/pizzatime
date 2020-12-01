@@ -9,9 +9,9 @@ We have a single endpoint:
 
 
 ## Parameters
-  * **postCode** (string): Postal code, formatted without spaces. Not case-sensitive. Required.
-  * **maxMins** (int): Maximum acceptable waiting time in minutes. Optional
-  * **maxPrice** (int):  Maximum acceptable price for a standard pizza. Optional.
+  + **postCode** (string): Postal code, formatted without spaces. Not case-sensitive. Required.
+  + **maxMins** (int): Maximum acceptable waiting time in minutes. Optional
+  + **maxPrice** (int):  Maximum acceptable price for a standard pizza. Optional.
  
 
 ## Sample requests
