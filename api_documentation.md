@@ -42,15 +42,3 @@ These are two sample requests for getting pizza joint information from our API f
     }
 }
 ```
-Results for bulk orders:
-```
-{
-  "results":
-    {
-      "restaurantName":'Pizzaland'
-      "eta":"60-75 mins"
-      "contactInfo":"(204)-336-3333"
-      "closingTime":"Till Midnight on Weekdays and till 2 AM on weekends"
-    }
-}
-```
