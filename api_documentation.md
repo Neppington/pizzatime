@@ -5,7 +5,7 @@ This is an API that conveniently provides contact information, menus, open hours
 
 ## Endpoint
 We have a single endpoint: 
-```GET /restaurants``` will access pizza joints according to your provided postal code, and can be further tuned with the use of the additional provided parameters.
+```GET /restaurants``` with our URL ```https://www.pizzatime.org/``` will access pizza joints according to your provided postal code, and can be further tuned with the use of the additional provided parameters.
 
 
 ## Parameters
