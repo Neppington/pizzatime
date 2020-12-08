@@ -27,7 +27,7 @@ These are a handful of sample requests that you can use to query your results an
 The response of our API contains the restaurant name, it's ETA for delivering pizza, it's contact info, as well as it's closing time, all of which is taken from the pizza joints' hosted information.
 
 ```
-{
+[
     {
       "restaurantName":"Pizza Square"
       "eta":"25 mins"
@@ -42,5 +42,5 @@ The response of our API contains the restaurant name, it's ETA for delivering pi
       "contactInfo":"(204)-586-1234"
       "closingTime":"Till 2 AM on Weekdays and till 3 AM on weekends"
     }
-}
+]
 ```
