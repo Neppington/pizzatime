@@ -28,7 +28,6 @@ The response of our API contains the restaurant name, it's ETA for delivering pi
 
 ```
 {
-  "results":
     {
       "restaurantName":"Pizza Square"
       "eta":"25 mins"
